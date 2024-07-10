@@ -17,7 +17,10 @@
   "release": {
     "projectsRelationship": "independent",
     "projects": ["jh-code-standards"],
-    "releaseTagPattern": "v${version}",
+    "releaseTagPattern": "v{version}",
+    "git": {
+      "commitMessage": "chore(release): {version}"
+    },
     "version": {
       "conventionalCommits": true,
       "generatorOptions": {
