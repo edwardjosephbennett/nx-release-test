@@ -17,6 +17,7 @@
   "release": {
     "projectsRelationship": "independent",
     "projects": ["jh-code-standards"],
+    "releaseTagPattern": "v${version}",
     "version": {
       "conventionalCommits": true,
       "generatorOptions": {
