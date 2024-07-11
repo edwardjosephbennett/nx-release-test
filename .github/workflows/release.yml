@@ -78,8 +78,10 @@ jobs:
 
       - name: Push changes
         run: |
-          git add .
-          git commit -m "chore(release): release $TAG_NAME [skip ci]"
+          git config user.name 'GitHub Action'
+          git config user.email 'action@github.com'
+          git status
+          git commit --amend -m "chore(release): release $TAG_NAME [skip ci]"
           git push --follow-tags
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
