@@ -19,7 +19,7 @@
     "projects": ["jh-code-standards"],
     "releaseTagPattern": "v{version}",
     "git": {
-      "commitMessage": "chore(release): {version}"
+      "commitMessage": "chore(release): {projectName} - v{version} [skip-ci]"
     },
     "version": {
       "conventionalCommits": true,
