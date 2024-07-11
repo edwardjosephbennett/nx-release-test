@@ -60,7 +60,7 @@ jobs:
         run: pnpm install
 
       - name: Setup SSH key
-        uses: webfactory/ssh-agent@v0.5.0
+        uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
 
@@ -78,10 +78,9 @@ jobs:
 
       - name: Push changes
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
           git add .
-          git commit -m "chore(release): release ${{ github.ref_name }}"
+          git commit -m "chore(release): release $TAG_NAME [skip ci]"
           git push --follow-tags
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG_NAME: ${{ github.ref_name }}
