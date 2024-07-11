@@ -1,3 +1,15 @@
+## 0.3.1 (2024-07-11)
+
+
+### 🩹 Fixes
+
+- **lib:** adds new console log
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.3.0 (2024-07-11)
 
 
