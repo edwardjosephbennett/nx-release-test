@@ -1,3 +1,15 @@
+## 0.3.2 (2024-07-11)
+
+
+### 🩹 Fixes
+
+- **lib:** add new message
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.3.1 (2024-07-11)
 
 
