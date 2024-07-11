@@ -1,3 +1,17 @@
+## 0.3.0 (2024-07-11)
+
+
+### 🚀 Features
+
+- **console:** adding console logs
+
+- **ci:** update test
+
+
+### ❤️  Thank You
+
+- Ed Bennett
+
 ## 0.2.0 (2024-07-10)
 
 
